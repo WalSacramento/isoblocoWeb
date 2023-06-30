@@ -1,0 +1,47 @@
+<div class="container-question">
+            <div class="question">
+              Qual o material de fabricação dos Sistemas da Isobloco?
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                <div class="divider"></div>
+
+                Todos os Sistemas da Isobloco são fabricados em
+                <b>Concreto Celular Termoacústico</b>, tanto as soluções de
+                alvenaria quanto as soluções de laje, utilizando
+                <b>micro e nanobolhas</b> como agente aerador, em
+                <b>formulação própria</b>, normatizada e patenteada.<br /><br />
+              </div>
+            </div>
+          </div>
+
+          <div class="container-question">
+            <div class="question">Os blocos são de Isopor (EPS)?</div>
+            <div class="answercont">
+              <div class="answer">
+                <div class="divider"></div>
+
+                Não.
+                <b
+                  >Nenhum Sistema da Isobloco leva EPS (“isopor”) na sua
+                  composição</b
+                >. São todos fabricados em <b>concreto celular</b>. <br />
+                O <b>termo ISO</b>, do início do nome Isobloco, se refere à
+                palavra <b>"isotérmico"</b>. Isso significa que os Sistemas da
+                Isobloco são capazes de manter uma temperatura ambiente sempre
+                agradável, independente da temperatura externa. <br /><br />
+              </div>
+            </div>
+          </div>
+
+          <div class="container-question">
+            <div class="question">O que é concreto celular?</div>
+            <div class="answercont">
+              <div class="answer">
+                <div class="divider"></div>
+                Na construção civil, existem <b>diferentes tipos de concretos</b> e diversas <b>classificações</b> desses concretos, conforme as suas propriedades. Uma dessas categorias é a de <b>concreto leve</b>, onde o concreto celular se enquadra.
+                <br /> <b>O concreto celular</b> é um concreto <b>mais leve que o concreto convencional</b> e com <b>desempenhos técnicos superiores</b> aos demais sistemas construtivos, <b>possuindo isolamento térmico; isolamento acústico; corta-fogo; antimofo; antumidade.</b>
+                <br /><br />
+              </div>
+            </div>
+          </div>
