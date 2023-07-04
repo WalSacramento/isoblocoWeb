@@ -3,23 +3,25 @@
   --cinzaIsobloco: rgba(114, 115, 118);
 }
 
-@font-face {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  src: url(/src/fonts/Helvetica-Neue-Font/HelveticaNeueMediumExtended.ttf);
-}
-
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .navbar {
@@ -34,10 +36,6 @@ body {
 
 .navbar-logo img {
   max-height: 60px;
-}
-
-nav .navbar-logo {
-  display: none;
 }
 
 .navbar-menu {
@@ -68,114 +66,79 @@ nav .navbar-logo {
   scale: 1.5;
 }
 
-.container {
-  width: 100%;
+.banner {
+  margin: 5rem 0 5rem 0;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-.banner img {
-  width: 100%;
-  height: 100%;
-  /* object-fit: cover; */
+.banner img{
+  width: 80%;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+  font-weight: 800;
 }
 
 .content {
-  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.titleCardsContainer{
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 5rem;
+}
+
+.cardsContainer {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.products-title {
-  padding: 20px;
-  padding-left: 10rem;
-}
-/* Card */
 .card {
   width: 18rem;
-  height: 21rem;
-  margin: 25px;
+  height: 23rem;
   background-color: #fff;
-  /* border-radius: 20px; */
-  /* overflow: hidden; */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s, background-color 0.3s;
-
   display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-/* Card Header*/
-.card-header {
-  width: 100%;
-  /* height: 90%; */
-  overflow: hidden;
-  /* position: relative; */
-}
-
-.card-img {
-  width: 100%;
-  /* width: auto; */
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Card Body */
-.card-body {
-  /* height: 8rem; */
-  padding: 15px;
-  text-align: center;
-  font-family: sans-serif;
-  /* position: relative; */
-}
-
-.card-title {
-  font-size: 27px;
-  bottom: 0;
-  left: 0;
-  /* position: absolute; */
-  margin: 10px;
-  color: black;
-}
-
-.card-text {
-  display: none;
-  font-size: 12px;
-  /* height: 5rem; */
-  margin: 5px auto;
-  color: var(--cinzaIsobloco);
-}
-
-.card-footer {
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  text-align: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cardHeader {
+  width: 100%;
+  height: 3rem;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.card-footer a {
+.card-image img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFooter {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFooter a {
+  margin-left: 0.2rem;
   color: black;
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-weight: 600;
-  background-color: #fff;
-  transition: 0.3s;
 }
-
-/* Animação Hover */
-.card:hover {
-  transform: scale(1.05);
-}
-
 
 footer {
   background-color: #373131;
@@ -193,15 +156,11 @@ footer img {
   max-height: 60px;
 }
 
-@media (max-width: 768px) {
-  .products-title {
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-  }
-}
-
 @media (max-width: 440px) {
+  .container {
+    align-items: center;
+  }
+  
   .navbar {
     align-items: center;
     height: 100%;
@@ -219,7 +178,6 @@ footer img {
   }
 
   .burguer {
-    width: 50%;
     display: flex;
     justify-content: space-around;
   }
@@ -235,5 +193,22 @@ footer img {
   .navbar-menu li {
     margin-left: 0px;
     margin: 2px;
+  }
+  
+  .banner {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .banner img{
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .titleCardsContainer {
+    font-size: 1rem;
+    margin: 1rem;
   }
 }
