@@ -178,6 +178,7 @@ footer img {
   }
 
   .burguer {
+    width: 20%;
     display: flex;
     justify-content: space-around;
   }
@@ -198,6 +199,7 @@ footer img {
   .banner {
     margin: 0.5rem 0 0.5rem 0;
   }
+
   .banner img{
     width: 100%;
   }
