@@ -32,6 +32,8 @@ body {
   padding: 10px;
   height: 5rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  position: relative; /* É necessário definir uma posição */
+  z-index: 1;
 }
 
 .navbar-logo img {
@@ -67,7 +69,7 @@ body {
 }
 
 .banner {
-  margin: 3.2rem 0 5rem 0;
+  margin: 0 0 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,14 +80,21 @@ body {
   width: 100%;
 }
 
+#banner_mobile {
+  display: none;
+}
+
 .title {
   font-size: 2rem;
   margin: 1rem 0 1rem 0;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .content {
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
 .titleCardsContainer{
@@ -96,9 +105,10 @@ body {
 .cardsContainer {
   display: flex;
   justify-content: flex-start;
-  margin-left: 5rem;
+  margin-left: 3rem;
   align-items: center;
   flex-wrap: wrap;
+  /* width: 95%; */
 }
 
 .card {
@@ -109,7 +119,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1rem 2rem 1rem 2rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -173,7 +183,6 @@ footer img {
     width: 100%;
     padding: 0;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
   }
 
   .navbar-logo {
@@ -203,7 +212,16 @@ footer img {
   }
   
   .banner {
-    margin: -0.5rem 0 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  #banner_mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  #banner_desktop {
+    display: none;
   }
 
   .title {
@@ -214,5 +232,12 @@ footer img {
   .titleCardsContainer {
     font-size: 1rem;
     margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardsContainer {
+    margin-left: 0;
+    justify-content: center;
   }
 }
