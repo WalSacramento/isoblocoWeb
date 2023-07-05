@@ -45,7 +45,7 @@ body {
 
 .navbar-menu li {
   margin-left: 10px;
-  position: relative;
+  /* position: relative; */
 }
 
 .navbar-menu li a {
@@ -67,7 +67,7 @@ body {
 }
 
 .banner {
-  margin: 5rem 0 5rem 0;
+  margin: 3.2rem 0 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +75,7 @@ body {
 }
 
 .banner img{
-  width: 80%;
+  width: 100%;
 }
 
 .title {
@@ -95,7 +95,8 @@ body {
 
 .cardsContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-left: 5rem;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -110,6 +111,11 @@ body {
   flex-direction: column;
   margin: 1rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cardLink {
+  text-decoration: none;
+  color: black;
 }
 
 .cardHeader {
@@ -197,11 +203,7 @@ footer img {
   }
   
   .banner {
-    margin: 0.5rem 0 0.5rem 0;
-  }
-
-  .banner img{
-    width: 100%;
+    margin: -0.5rem 0 0.5rem 0;
   }
 
   .title {
