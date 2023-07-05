@@ -69,7 +69,6 @@ body {
 }
 
 .banner {
-  margin: 0 0 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +85,7 @@ body {
 
 .title {
   font-size: 2rem;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 2rem 0;
   font-weight: 700;
 }
 
@@ -99,7 +98,10 @@ body {
 
 .titleCardsContainer{
   font-size: 1.5rem;
-  margin: 2rem 0 2rem 5rem;
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardsContainer {
