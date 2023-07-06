@@ -120,13 +120,6 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-#slider {
-  display: flex;
-  width: 98%;
-  overflow: hidden;
-  overflow-x: scroll;
-}
-
 .cardsContainer {
   display: flex;
   justify-content: flex-start;
