@@ -388,6 +388,10 @@ footer img {
     width: 100%;
   }
 
+  .btn{
+    width: 11rem;
+  }
+  
   section {
     flex-direction: column;
     margin-bottom: 0;
