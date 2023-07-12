@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISOBLOCO 10</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-logo">
+          <a href="">
+            <img src="/src/img/LogoIsobloco.png" alt="Logo Isobloco" />
+          </a>
+        </div>
+
+        <div id="burguer" class="burguer">
+          <span class="material-symbols-outlined" onclick="handleClickMenu()">
+            menu
+          </span>
+        </div>
+
+        <nav>
+          <ul id="itens" class="navbar-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">QUEM SOMOS</a></li>
+            <li><a href="#">SOLUÇÕES</a></li>
+            <li><a href="#">DOWNLOADS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="title">
+          <h1>CONHEÇA O SISTEMA &#160;</h1>
+          <h1><b>ISOBLOCO 10</b></h1>
+        </div>
+
+        <div class="buttons">
+          <button
+            class="btn"
+            id="vedacao"
+            onclick="alternarDivs('vedacao', this.parentNode.parentNode)"
+          >
+            Vedação
+          </button>
+          <button
+            class="btn"
+            id="estrutural"
+            onclick="alternarDivs('estrutural', this.parentNode.parentNode)"
+          >
+            Estrutural
+          </button>
+        </div>
+
+        <section>
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radioBtn" id="radio1" />
+              <input type="radio" name="radioBtn" id="radio2" />
+              <input type="radio" name="radioBtn" id="radio3" />
+              <input type="radio" name="radioBtn" id="radio4" />
+              <input type="radio" name="radioBtn" id="radio5" />
+
+              <div class="slide first">
+                <img src="./src/img/img1.jpg" alt="Imagem 1" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img2.jpg" alt="Imagem 2" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img3.jpg" alt="Imagem 3" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img4.jpg" alt="Imagem 4" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img5.jpg" alt="Imagem 5" />
+              </div>
+
+              <div class="navigationAuto">
+                <div class="autoBtn1"></div>
+                <div class="autoBtn2"></div>
+                <div class="autoBtn3"></div>
+                <div class="autoBtn4"></div>
+                <div class="autoBtn5"></div>
+              </div>
+
+              <div class="manualNavigation">
+                <label for="radio1" class="manualBtn"></label>
+                <label for="radio2" class="manualBtn"></label>
+                <label for="radio3" class="manualBtn"></label>
+                <label for="radio4" class="manualBtn"></label>
+                <label for="radio5" class="manualBtn"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="image">
+            <img src="./src/img/img1.jpg" alt="Imagem 1" />
+          </div>
+
+          <div class="textSection vedacao">
+            <ul>
+              <b><span class="material-symbols-outlined"> circle </span>USO:</b>
+              <p>
+                Execução de paredes de vedações externas, internas e de muros.
+              </p>
+            </ul>
+
+            <ul>
+              <b
+                ><span class="material-symbols-outlined"> circle </span>
+                BENEFÍCIOS:</b
+              >
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                térmico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                acústico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Antiumidade
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Antimofo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Corta-fogo
+              </li>
+            </ul>
+          </div>
+
+          <div class="textSection estrutural">
+            <ul>
+              <b><span class="material-symbols-outlined"> circle </span>USO:</b>
+              <p>
+                Obras autoportantes. Execução de paredes estruturais externas,
+                internas e de muros.
+              </p>
+            </ul>
+
+            <ul>
+              <b
+                ><span class="material-symbols-outlined"> circle </span>
+                BENEFÍCIOS:</b
+              >
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                térmico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                acústico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Antiumidade
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Antimofo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Corta-fogo
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="videoCarroussel">
+            <iframe
+              width="90%"
+              height="100%"
+              src="https://www.youtube.com/embed/EGQDFZiP9oU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="textSection vedacao" id="fichaTecnica">
+            <h2>Ficha Técnica Isobloco 10 STD</h2>
+            <div class="table">
+              <p>Dimensões do Bloco:</p>
+              <p>10 x 30 x 60 cm</p>
+
+              <p>Consumo por m²:</p>
+              <p>5,5 unidades</p>
+
+              <p>Peso do Bloco:</p>
+              <p>15,00 kg</p>
+
+              <p>Peso da Parede por m²:</p>
+              <p>82.50 kg/m²</p>
+
+              <p>Desempenho Acústico:</p>
+              <p>53 dB</p>
+
+              <p>Desempenho Corta-Fogo:</p>
+              <p>240min (4 horas)</p>
+
+              <p>Condutividade Térmica:</p>
+              <p>0,17W/m.k</p>
+
+              <p>Taxa de Umidade:</p>
+              <p>5% a 8%</p>
+
+              <p>Resistência Mecânica:</p>
+              <p>3,0 MPa</p>
+
+              <p>Densidade:</p>
+              <p>> 800 kg/m³</p>
+
+              <p>Junta de Assentamento:</p>
+              <p>5 mm de espessura</p>
+            </div>
+
+            <a class="download" href=""
+              >Ficha Técnica Completa
+              <span id="downloadIcon" class="material-symbols-outlined">
+                download
+              </span></a
+            >
+          </div>
+
+          <div class="textSection estrutural" id="fichaTecnica">
+            <h2>Ficha Técnica Isobloco 10 EST</h2>
+            <div class="table">
+              <p>Dimensões do Bloco:</p>
+              <p>10 x 30 x 60 cm</p>
+
+              <p>Consumo por m²:</p>
+              <p>5,5 unidades</p>
+
+              <p>Peso do Bloco:</p>
+              <p>17,00 kg</p>
+
+              <p>Peso da Parede por m²:</p>
+              <p>93.50 kg/m²</p>
+
+              <p>Desempenho Acústico:</p>
+              <p>53 dB</p>
+
+              <p>Desempenho Corta-Fogo:</p>
+              <p>240min (4 horas)</p>
+
+              <p>Condutividade Térmica:</p>
+              <p>0,17W/m.k</p>
+
+              <p>Taxa de Umidade:</p>
+              <p>5% a 8%</p>
+
+              <p>Resistência Mecânica:</p>
+              <p>5,0 MPa</p>
+
+              <p>Densidade:</p>
+              <p>> 850 kg/m³</p>
+
+              <p>Junta de Assentamento:</p>
+              <p>5 mm de espessura</p>
+            </div>
+
+            <a class="download" href=""
+              >Ficha Técnica Completa
+              <span id="downloadIcon" class="material-symbols-outlined">
+                download
+              </span></a
+            >
+          </div>
+        </section>
+
+        <section>
+          <div class="kitImg">
+            <img src="./src/img/ImagemKit.png" alt="Imagem do Kit" />
+          </div>
+
+          <div class="textSection vedacao" id="composicaoKit">
+            <h2>Composição do Kit Isobloco 10 STD</h2>
+
+            <div class="table">
+              <p>Quantidade por Kit:</p>
+              <p>72 blocos e 4 sacos de Isocola</p>
+
+              <p>Peso por bloco:</p>
+              <p>15 kg</p>
+
+              <p>Peso por saco de Isocola:</p>
+              <p>20kg cada</p>
+
+              <p>Peso por Kit (blocos +isocola):</p>
+              <p>1.160 kg</p>
+
+              <p>Dimensão Kit: (LxCxA)</p>
+              <p>1,00x1,20x1,40 m</p>
+
+              <p>Rendimento:</p>
+              <p>13,09m²</p>
+            </div>
+          </div>
+
+          <div class="textSection estrutural" id="composicaoKit">
+            <h2>Composição do Kit Isobloco 10 EST</h2>
+
+            <div class="table">
+              <p>Quantidade por Kit:</p>
+              <p>72 blocos e 4 sacos de Isocola</p>
+
+              <p>Peso por bloco:</p>
+              <p>17 kg</p>
+
+              <p>Peso por saco de Isocola:</p>
+              <p>20kg cada</p>
+
+              <p>Peso por Kit (blocos +isocola):</p>
+              <p>1.304 kg</p>
+
+              <p>Dimensão Kit: (LxCxA)</p>
+              <p>1,00x1,20x1,40 m</p>
+
+              <p>Rendimento:</p>
+              <p>13,09m²</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <p class="footer-text">
+          Copyright © 2023 ISOBLOCO. Todos os direitos reservados
+        </p>
+
+        <img src="/src/img/LogoIsobloco.png" alt="Logo Isobloco" />
+      </footer>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
