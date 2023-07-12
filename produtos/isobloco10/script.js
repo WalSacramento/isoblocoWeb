@@ -18,6 +18,14 @@ function nextSlide() {
   document.getElementById('radio' + count).checked = true
 }
 
+function beforeSlide() {
+  count--
+  if (count < 1) {
+    count = 5
+  }
+  document.getElementById('radio' + count).checked = true
+}
+
 function definirEstadoInicial() {
   var divEstrutural = document.querySelector(".estrutural");
   var divVedacao = document.querySelector(".vedacao");
@@ -74,3 +82,41 @@ function alternarDivs(botao, secao) {
 
 // Definir estado inicial ao carregar a página
 definirEstadoInicial();
+
+
+
+function scrollNextPhoto() {
+  var photoSlider = document.getElementById('photo-slider');
+  var currentScroll = photoSlider.scrollLeft;
+  var photoWidth = photoSlider.offsetWidth;
+
+  // Calcula a posição da próxima foto
+  var nextScroll = currentScroll + photoWidth;
+
+  // Verifica se já chegou ao final do slider
+  if (nextScroll >= photoSlider.scrollWidth) {
+    // Se já estiver no final, volta para o início
+    photoSlider.scrollTo({ left: 0, behavior: 'smooth' });
+  } else {
+    // Caso contrário, faz o scroll para a próxima foto
+    photoSlider.scrollTo({ left: nextScroll, behavior: 'smooth' });
+  }
+}
+
+function scrollPreviousPhoto() {
+  var photoSlider = document.getElementById('photo-slider');
+  var currentScroll = photoSlider.scrollLeft;
+  var photoWidth = photoSlider.offsetWidth;
+
+  // Calcula a posição da foto anterior
+  var previousScroll = currentScroll - photoWidth;
+
+  // Verifica se já está no início do slider
+  if (previousScroll < 0) {
+    // Se estiver no início, volta para a primeira foto
+    photoSlider.scrollTo({ left: 0, behavior: 'smooth' });
+  } else {
+    // Caso contrário, faz o scroll para a foto anterior
+    photoSlider.scrollTo({ left: previousScroll, behavior: 'smooth' });
+  }
+}
