@@ -8,6 +8,7 @@ document.getElementById("radio1").checked = true
 
 setInterval(function () {
   nextSlide()
+  scrollNextPhoto()
 }, 5000)
 
 function nextSlide() {
