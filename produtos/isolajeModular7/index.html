@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISOLAJE MODULAR 7</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-logo">
+          <a href="https://www.isobloco.com.br/">
+            <img src="./src/img/LogoIsobloco.png" alt="Logo Isobloco" />
+          </a>
+        </div>
+
+        <div id="burguer" class="burguer">
+          <span class="material-symbols-outlined" onclick="handleClickMenu()">
+            menu
+          </span>
+        </div>
+
+        <nav>
+          <ul id="itens" class="navbar-menu">
+            <li><a href="https://www.isobloco.com.br/">HOME</a></li>
+            <li><a href="https://www.isobloco.com.br/quem-somos/">QUEM SOMOS</a></li>
+            <li><a href="https://www.isobloco.com.br/sistema-isobloco/">SOLUÇÕES</a></li>
+            <li><a href="https://www.isobloco.com.br/arquivos/">DOWNLOADS</a></li>
+            <li><a href="https://www.isobloco.com.br/category/blog/">BLOG</a></li>
+            <li><a href="https://www.isobloco.com.br/contato/">CONTATO</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="title">
+          <h1>CONHEÇA O SISTEMA &#160;</h1>
+          <h1><b>ISOLAJE MODULAR 7</b></h1>
+        </div>
+
+        <div class="buttons">
+          <button
+            class="btn"
+            id="vedacao"
+            onclick="alternarDivs('vedacao', this.parentNode.parentNode)"
+          >
+            7x30x60
+          </button>
+          <button
+            class="btn"
+            id="estrutural"
+            onclick="alternarDivs('estrutural', this.parentNode.parentNode)"
+          >
+            7x60x30
+          </button>
+        </div>
+
+        <section>
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radioBtn" id="radio1" />
+              <input type="radio" name="radioBtn" id="radio2" />
+              <input type="radio" name="radioBtn" id="radio3" />
+              <input type="radio" name="radioBtn" id="radio4" />
+              <input type="radio" name="radioBtn" id="radio5" />
+
+              <div class="slide first">
+                <img src="./src/img/img1.jpg" alt="Imagem 1" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img2.jpg" alt="Imagem 2" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img3.jpg" alt="Imagem 3" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img4.jpg" alt="Imagem 4" />
+              </div>
+              <div class="slide">
+                <img src="./src/img/img5.jpg" alt="Imagem 5" />
+              </div>
+
+              <div class="navigationAuto">
+                <div class="autoBtn1"></div>
+                <div class="autoBtn2"></div>
+                <div class="autoBtn3"></div>
+                <div class="autoBtn4"></div>
+                <div class="autoBtn5"></div>
+              </div>
+
+              <div class="manualNavigation">
+                <label for="radio1" class="manualBtn"></label>
+                <label for="radio2" class="manualBtn"></label>
+                <label for="radio3" class="manualBtn"></label>
+                <label for="radio4" class="manualBtn"></label>
+                <label for="radio5" class="manualBtn"></label>
+              </div>
+
+              <div class="arrowNavigation">
+                <button class="arrowNavigationNext" onclick="nextSlide()"><span class="material-symbols-outlined">
+                  navigate_next
+                  </span></button>
+                  <button class="arrowNavigationBefore" onclick="beforeSlide()"><span class="material-symbols-outlined">
+                    navigate_before
+                    </span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="image">
+            <img src="./src/img/img1.jpg" alt="Imagem 1" />
+          </div>
+
+          <div class="photo-slider" id="photo-slider">
+            <div class="photo-slider-content">
+              <img src="./src/img/img2.jpg" alt="Foto 2">
+              <img src="./src/img/img3.jpg" alt="Foto 3">
+              <img src="./src/img/img4.jpg" alt="Foto 4">
+              <img src="./src/img/img5.jpg" alt="Foto 5">
+              <img src="./src/img/img1.jpg" alt="Foto 1">
+            </div>
+
+            <div class="arrowNavigationPhotos">
+              <button class="arrowNavigationNextPhotos" onclick="scrollNextPhoto()"><span class="material-symbols-outlined">
+                navigate_next
+                </span></button>
+                <button class="arrowNavigationBeforePhotos" onclick="scrollPreviousPhoto()"><span class="material-symbols-outlined">
+                  navigate_before
+                  </span></button>
+            </div>
+          </div>
+
+          <div class="textSection vedacao">
+            <ul>
+              <b><span class="material-symbols-outlined"> circle </span>USO:</b>
+              <p>
+                Laje Piso ou Laje Forro. <br />
+                Execução de lajes pré-moldadas. <br />
+                Estrutura metálica.
+              </p>
+            </ul>
+
+            <ul>
+              <b
+                ><span class="material-symbols-outlined"> circle </span>
+                BENEFÍCIOS:</b
+              >
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                térmico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                acústico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Antiumidade
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Antimofo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Corta-fogo
+              </li>
+            </ul>
+          </div>
+
+          <div class="textSection estrutural">
+            <ul>
+              <b><span class="material-symbols-outlined"> circle </span>USO:</b>
+              <p>
+                Laje Forro. <br />
+                Execução de lajes pré-moldadas. <br />
+                Estrutura metálica.
+              </p>
+            </ul>
+
+            <ul>
+              <b
+                ><span class="material-symbols-outlined"> circle </span>
+                BENEFÍCIOS:</b
+              >
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                térmico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Isolamento
+                acústico
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Antiumidade
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Antimofo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Corta-fogo
+              </li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section>
+          <div class="videoCarroussel">
+            <iframe
+              width="90%"
+              height="100%"
+              src="https://www.youtube.com/embed/EGQDFZiP9oU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="textSection vedacao" id="fichaTecnica">
+            <h2>Ficha Técnica Isolaje Modular 7x30x60</h2>
+            <div class="table">
+              <p>Dimensões da Lajota:</p>
+              <p>7 x 30 x 60 cm</p>
+
+              <p>Consumo por m²:</p>
+              <p>5,5 unidades</p>
+
+              <p>Peso da Lajota:</p>
+              <p>10,00 kg</p>
+
+              <p>Peso da Laje por m²:</p>
+              <p>55,00 kg/m²</p>
+
+              <p>Desempenho Acústico:</p>
+              <p>43 dB</p>
+
+              <p>Desempenho Corta-Fogo:</p>
+              <p>120min (2 horas)</p>
+
+              <p>Condutividade Térmica:</p>
+              <p>0,17W/m.k</p>
+
+              <p>Taxa de Umidade:</p>
+              <p>5% a 8%</p>
+
+              <p>Resistência Mecânica:</p>
+              <p>3,0 MPa</p>
+
+              <p>Densidade:</p>
+              <p>> 800 kg/m³</p>
+
+              <p>Junta de Assentamento:</p>
+              <p> - </p>
+            </div>
+
+            <a class="download" target="_blank" href="https://www.isobloco.com.br/wp-content/uploads/2023/06/FichaTcnicaEngenhariaIsolajeModular7STD7x30x60V2.0.pdf"
+              >Ficha Técnica Completa
+              <span id="downloadIcon" class="material-symbols-outlined">
+                download
+              </span></a
+            >
+          </div>
+
+          <div class="textSection estrutural" id="fichaTecnica">
+            <h2>Ficha Técnica Isolaje Modular 7x60x30</h2>
+            <div class="table">
+              <p>Dimensões da Lajota:</p>
+              <p>7 x 60 x 30 cm</p>
+
+              <p>Consumo por m²:</p>
+              <p>5,5 unidades</p>
+
+              <p>Peso da Lajota:</p>
+              <p>10,00 kg</p>
+
+              <p>Peso da Laje por m²:</p>
+              <p>55,00 kg/m²</p>
+
+              <p>Desempenho Acústico:</p>
+              <p>43 dB</p>
+
+              <p>Desempenho Corta-Fogo:</p>
+              <p>120min (2 horas)</p>
+
+              <p>Condutividade Térmica:</p>
+              <p>0,17 W/m.k</p>
+
+              <p>Taxa de Umidade:</p>
+              <p>5% a 8%</p>
+
+              <p>Resistência Mecânica:</p>
+              <p>3,0 MPa</p>
+
+              <p>Densidade:</p>
+              <p>> 800 kg/m³</p>
+
+              <p>Junta de Assentamento:</p>
+              <p> - </p>
+            </div>
+
+            <a class="download" target="_blank" href="https://www.isobloco.com.br/wp-content/uploads/2023/06/FichaTcnicaEngenhariaIsolajeModular7STD7x60x30V2.0.pdf"
+              >Ficha Técnica Completa
+              <span id="downloadIcon" class="material-symbols-outlined">
+                download
+              </span></a
+            >
+          </div>
+
+        </section>
+
+        <section>
+          <div class="kitImg">
+            <img src="./src/img/ImagemKit.png" alt="Imagem do Kit" />
+          </div>
+
+          <div class="textSection vedacao" id="composicaoKit">
+            <h2>Kit Isolaje Modular 7x30x60</h2>
+
+            <div class="table">
+              <p>Quantidade por Kit:</p>
+              <p>104 peças</p>
+
+              <p>Peso por lajota:</p>
+              <p>10,00 kg</p>
+
+              <p>Peso por Kit (Lajotas):</p>
+              <p>1.040,00 kg</p>
+
+              <p>Dimensão Kit (LxCxA):</p>
+              <p>1,00 x 1,20 x 1,40 m</p>
+
+              <p>Rendimento:</p>
+              <p>18,90 m²</p>
+            </div>
+          </div>
+
+          <div class="textSection estrutural" id="composicaoKit">
+            <h2>Kit Isolaje MOdular 7x60x30</h2>
+
+            <div class="table">
+              <p>Quantidade por Kit:</p>
+              <p>104 peças</p>
+
+              <p>Peso por lajota:</p>
+              <p>10,00 kg</p>
+
+              <p>Peso por Kit (Lajotas):</p>
+              <p>1.040 kg</p>
+
+              <p>Dimensão Kit (LxCxA):</p>
+              <p>1,00 x 1,20 x 1,40 m</p>
+
+              <p>Rendimento:</p>
+              <p>18,91 m²</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="version">
+        <p>Versão 1.0.0</p>
+      </div>
+
+      <footer>
+        <p class="footer-text">
+          Copyright © 2023 ISOBLOCO. Todos os direitos reservados
+        </p>
+
+        <img src="./src/img/LogoIsobloco.png" alt="Logo Isobloco" />
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
