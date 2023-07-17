@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARGAMASSAS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-logo">
+          <a href="https://www.isobloco.com.br/">
+            <img src="./src/img/LogoIsobloco.png" alt="Logo Isobloco" />
+          </a>
+        </div>
+
+        <div id="burguer" class="burguer">
+          <span class="material-symbols-outlined" onclick="handleClickMenu()">
+            menu
+          </span>
+        </div>
+
+        <nav>
+          <ul id="itens" class="navbar-menu">
+            <li><a href="https://www.isobloco.com.br/">HOME</a></li>
+            <li>
+              <a href="https://www.isobloco.com.br/quem-somos/">QUEM SOMOS</a>
+            </li>
+            <li>
+              <a href="https://www.isobloco.com.br/sistema-isobloco/"
+                >SOLUÇÕES</a
+              >
+            </li>
+            <li>
+              <a href="https://www.isobloco.com.br/arquivos/">DOWNLOADS</a>
+            </li>
+            <li>
+              <a href="https://www.isobloco.com.br/category/blog/">BLOG</a>
+            </li>
+            <li><a href="https://www.isobloco.com.br/contato/">CONTATO</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="title">
+          <h1>CONHEÇA NOSSAS &#160;</h1>
+          <h1><b>ARGAMASSAS</b></h1>
+        </div>
+
+        <div class="buttons">
+          <button
+            class="btn"
+            id="vedacao"
+            onclick="alternarDivs('vedacao', this.parentNode.parentNode)"
+          >
+            Isocola
+          </button>
+          <button
+            class="btn"
+            id="estrutural"
+            onclick="alternarDivs('estrutural', this.parentNode.parentNode)"
+          >
+            Isomassa
+          </button>
+        </div>
+
+        <section>
+
+          <div class="image vedacao" id="imagemVedacao">
+            <img src="./src/img/img1.png" alt="Imagem 1" />
+          </div>
+
+          <div class="image estrutural" id="imagemEstrutural">
+            <img src="./src/img/img2.png" alt="Imagem 1" />
+          </div>
+
+          <div class="textSection vedacao">
+            <ul>
+              <b><span class="material-symbols-outlined"> circle </span>USO:</b>
+              <p>
+                Argamassa Polimérica. <br />
+                Colagem dos Sistemas Construtivos de alvenaria e revestimento.
+              </p>
+            </ul>
+
+            <ul>
+              <b
+                ><span class="material-symbols-outlined"> circle </span>
+                BENEFÍCIOS:</b
+              >
+              <li>
+                <span class="material-symbols-outlined"> check </span>Alta
+                Resistência
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Confiabilidade
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Praticidade no preparo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Economia
+                de água
+              </li>
+            </ul>
+          </div>
+
+          <div class="textSection estrutural">
+            <ul>
+              <b><span class="material-symbols-outlined"> circle </span>USO:</b>
+              <p>
+                Bicapa: base acrílica. <br />
+                Substituição do chapisco e reboco. Revestimento dos Sistemas
+                Construtivos.
+              </p>
+            </ul>
+
+            <ul>
+              <b
+                ><span class="material-symbols-outlined"> circle </span>
+                BENEFÍCIOS:</b
+              >
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Estanqueidade
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Antimofo
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Redução
+                térmica
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span
+                >Praticidade
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> check </span>Reduz
+                etapas de obra
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="videoCarroussel vedacao">
+            <iframe
+              width="90%"
+              height="100%"
+              src="https://www.youtube.com/embed/EGQDFZiP9oU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="textSection vedacao" id="fichaTecnica">
+            <h2>Ficha Técnica Isocola</h2>
+            <div class="table">
+              <p>Desempenho de resistência ao impacto:</p>
+              <p>5 MPa</p>
+
+              <p>Desempenho de resistência de arrastamento:</p>
+              <p>8 MPa</p>
+
+              <p>Desempenho de aderência em cura normal:</p>
+              <p>> 0,5 MPa</p>
+
+              <p>Desempenho de aderência em cura submersa:</p>
+              <p>> 0,5 MPa</p>
+            </div>
+          </div>
+
+          <div class="textSection estrutural" id="fichaTecnica">
+            <h2>Ficha Técnica Isomassa Externa e Interna</h2>
+            <div class="table">
+              <p>Consumo Isomassa Externa:</p>
+              <p>3,5 kg/m²</p>
+
+              <p>Consumo Isomassa Interna:</p>
+              <p>3,5 kg/m²</p>
+
+              <p>Uso Externo:</p>
+              <p>Isomassa Externa</p>
+
+              <p>Uso Interno:</p>
+              <p>Isomassa Interna</p>
+
+              <p>Embalagens:</p>
+              <p>
+                Saco 15 kg (validade: 4 meses) <br />
+                Balde 30 kg (validade: 12 meses)
+              </p>
+
+              <p>Rendimento/saco:</p>
+              <p>
+                Saco: Isomassa Externa até 4,29m²/sc <br />
+                Saco: Isomassa Interna até 6,00m²/sc
+              </p>
+
+              <p>Rendimento/balde:</p>
+              <p>
+                Balde: Isomassa Externa até 8,57m²/bd <br />
+                Balde: Isomassa Interna até 12,00m²/bd
+              </p>
+
+              <p>Cores Isomassa Externa:</p>
+              <p>
+                Branca, Ocre Colonial, Amarelo Canário, Chocolate, Verde Claro,
+                Palha
+              </p>
+
+              <p>Cores Isomassa Interna:</p>
+              <p>Branca</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="version">
+        <p>Versão 1.0.0</p>
+      </div>
+
+      <footer>
+        <p class="footer-text">
+          Copyright © 2023 ISOBLOCO. Todos os direitos reservados
+        </p>
+
+        <img src="./src/img/LogoIsobloco.png" alt="Logo Isobloco" />
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,16 +1,14 @@
 :root {
   --verdeIsobloco: #01a859;
-  --cinzaIsobloco: 114, 115, 118;
-}
-
-@font-face {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  src: url(/src/fonts/Helvetica-Neue-Font/HelveticaNeueMediumExtended.ttf);
+  --cinzaIsobloco: rgba(114, 115, 118);
+  --verdeTexto: #5d8060;
+  --cinzaTexto: #797b7d;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -95,10 +93,8 @@ nav .navbar-logo {
   border-radius: 20px;
   box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
   margin: 20px 0;
-  min-width: 100%;
+  max-width: 100%;
 }
-
-
 
 .container-question {
   background-color: #fff;
@@ -106,7 +102,6 @@ nav .navbar-logo {
   border-radius: 20px;
   box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
   margin: 20px;
-  
 }
 
 .containet-question::after {
@@ -120,7 +115,6 @@ nav .navbar-logo {
 .container-question.active::after {
   transform: rotate(45deg);
 }
-
 
 .question {
   font-size: 1.2rem;
@@ -161,7 +155,7 @@ nav .navbar-logo {
   margin: 10px 0;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
