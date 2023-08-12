@@ -159,13 +159,18 @@ img {
   max-width: 100%;
 }
 
+.version {
+  margin: 1rem auto;
+  color: var(--cinzaTexto);
+}
+
 footer {
   background-color: #373131;
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 .footer-text {
@@ -182,10 +187,19 @@ footer img {
     min-height: 0;
   }
   .content {
-    width: 80%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+   .container-question {
+    margin: 20px 0;
+  }
+
+  .answer {
+    padding: 0 10px 20px;
+    font-size: 0.9rem;
   }
 }
 
@@ -207,7 +221,7 @@ footer img {
   }
 
   .burguer {
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
   }
