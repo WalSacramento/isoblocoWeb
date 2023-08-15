@@ -109,7 +109,6 @@ nav .navbar-logo {
   font-size: 2.2rem;
   position: absolute;
   right: 20px;
-  /* transition: 0.2s; */
 }
 
 .container-question.active::after {
@@ -141,7 +140,6 @@ nav .navbar-logo {
 .answercont {
   max-height: 0;
   overflow: hidden;
-  /* transition: 0.3s; */
 }
 
 .answer {
