@@ -105,6 +105,12 @@ body {
   margin: 10px 0;
 }
 
+.dividerVertical {
+  height: 25rem; /* Defina a altura desejada para o divider vertical */
+  border-left: 2px solid var(--verdeIsobloco); /* Cor e estilo da borda */
+  margin: 0 10px; /* Margens esquerda e direita para espaçamento */
+}
+
 .titleCardsContainer {
   color: var(--verdeTexto);
   font-size: 1.5rem;
